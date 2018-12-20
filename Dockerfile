@@ -14,6 +14,7 @@ RUN apk add --update ca-certificates \
  && curl -L https://storage.googleapis.com/kubernetes-helm/${HELM_FILENAME} | tar xz && mv linux-amd64/helm /bin/helm && rm -rf linux-amd64 \
  && chmod +x /usr/local/bin/kubectl \
  && apk del --purge deps \
- && rm /var/cache/apk/*
+ && rm /var/cache/apk/* \
+ && apk add curl
 
 ENTRYPOINT ["/bin/helm"]
