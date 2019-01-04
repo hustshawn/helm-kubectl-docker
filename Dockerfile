@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 MAINTAINER Shawn Zhang <hustshawn@gmail.com>
 
-ENV KUBE_LATEST_VERSION=v1.11.5
+ENV KUBE_LATEST_VERSION=v1.11.6
 ENV HELM_VERSION=v2.11.0
 ENV HELM_FILENAME=helm-${HELM_VERSION}-linux-amd64.tar.gz
 
